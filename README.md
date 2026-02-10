@@ -1381,6 +1381,51 @@ img, svg { max-width:100%; height:auto; }
 }
 .calScore.finished{color:var(--red)}
 
+
+/* ===== STAFF CARDS (no stats) ===== */
+.staff-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+.player-card[data-staff="true"] .player-stats{ display:none !important; }
+.player-card[data-staff="true"] .player-image{
+  height: 190px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:52px;
+}
+
+/* Smaller + tighter on phones */
+@media (max-width: 520px){
+  body{ font-size: 14px; }
+  .hero{ padding-top: calc(var(--headerH) + 34px) !important; }
+  .hero-title{ font-size: clamp(44px, 12vw, 70px) !important; }
+  .hero-subtitle{ font-size: 14px !important; }
+  .hero-stats{ gap: 12px !important; }
+  .hero-stat{ min-width: 96px !important; }
+  .player-card{ padding: 14px !important; }
+  .player-image{ height: 220px !important; }
+}
+
+
+/* ==============================
+   POPUP POPOVER (WORKING)
+   - smaller + anchored to clicked player
+============================== */
+.modal{
+  width: min(360px, 92vw) !important;
+  max-width: 360px !important;
+}
+@media (max-width: 520px){
+  .modal{ width: min(340px, 94vw) !important; max-width: 340px !important; }
+}
+.modal.open{
+  transform:none !important; /* we position manually */
+}
+
 </style>
 </head>
 <body>
@@ -1671,6 +1716,49 @@ img, svg { max-width:100%; height:auto; }
             </div>
         </div>
     </div>
+
+            <!-- STAFF -->
+            <div class="roster-section-title" style="margin-top:42px">STAFF</div>
+            <div class="roster-section-subtitle">Encadrement du club</div>
+
+            <div class="staff-grid">
+              <div class="player-card" data-staff="true" data-position="staff"
+                   data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Entraîneur" data-kind="staff">
+                <div class="player-image">🎯<div class="player-number">COACH</div></div>
+                <div class="player-info">
+                  <h3 class="player-name">Entraîneur</h3>
+                  <p class="player-position">Head Coach</p>
+                </div>
+              </div>
+
+              <div class="player-card" data-staff="true" data-position="staff"
+                   data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Entraîneur adjoint" data-kind="staff">
+                <div class="player-image">🧠<div class="player-number">ASST</div></div>
+                <div class="player-info">
+                  <h3 class="player-name">Entraîneur adjoint</h3>
+                  <p class="player-position">Assistant Coach</p>
+                </div>
+              </div>
+
+              <div class="player-card" data-staff="true" data-position="staff"
+                   data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Président" data-kind="staff">
+                <div class="player-image">👑<div class="player-number">PRES</div></div>
+                <div class="player-info">
+                  <h3 class="player-name">Président</h3>
+                  <p class="player-position">President</p>
+                </div>
+              </div>
+
+              <div class="player-card" data-staff="true" data-position="staff"
+                   data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Directeur sportif" data-kind="staff">
+                <div class="player-image">📋<div class="player-number">GM</div></div>
+                <div class="player-info">
+                  <h3 class="player-name">Directeur sportif</h3>
+                  <p class="player-position">Sporting Director</p>
+                </div>
+              </div>
+            </div>
+
 </div>
         </div>
     </section>
@@ -2400,7 +2488,7 @@ img, svg { max-width:100%; height:auto; }
 
         // Filter players
         function filterPlayers(category) {
-            const cards = document.querySelectorAll('.player-card');
+            const cards = document.querySelectorAll('.roster-grid .player-card');
             const buttons = document.querySelectorAll('.filter-btn');
             
             buttons.forEach(btn => btn.classList.remove('active'));
@@ -2481,7 +2569,7 @@ img, svg { max-width:100%; height:auto; }
             backdrop.addEventListener('click', close);
             window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') close(); });
 
-            document.querySelectorAll('.player-card').forEach(card=>{
+            document.querySelectorAll(".player-card:not([data-kind=\"staff\"])").forEach(card=>{
                 card.addEventListener('click', ()=>{
                     const name = card.querySelector('.player-name')?.textContent?.trim() || 'JOUEUR';
                     const role = card.dataset.role || card.querySelector('.player-position')?.textContent?.trim() || 'POSITION';
@@ -2519,7 +2607,7 @@ img, svg { max-width:100%; height:auto; }
         (function(){
           const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
           if(reduce) return;
-          const cards = document.querySelectorAll('.player-card');
+          const cards = document.querySelectorAll(".player-card:not([data-kind=\"staff\"])");
           cards.forEach(card=>{
             let rect=null;
             card.addEventListener('mouseenter', ()=>{ rect = card.getBoundingClientRect(); card.style.transition='transform .12s ease'; });
@@ -2622,7 +2710,7 @@ img, svg { max-width:100%; height:auto; }
   function txt(el){ return (el && el.textContent ? el.textContent.trim() : ''); }
 
   // Guarantee popup on player click (your cards are .player-card)
-  document.querySelectorAll('.player-card').forEach(card=>{
+  document.querySelectorAll(".player-card:not([data-kind=\"staff\"])").forEach(card=>{
     const openFor = ()=>{
       const name = txt(card.querySelector('.player-name')) || card.getAttribute('data-name') || 'Joueur';
       // Position label: priority data-role (Attaquant/Défenseur/Gardien), else data-position, else visible text
@@ -3309,6 +3397,216 @@ function safe(s){ return (s||"").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
     first.style.borderColor = "rgba(211,47,47,.35)";
   }
 })();
+</script>
+
+
+<script>
+/* ==============================
+   POPUP HOTFIX (guaranteed)
+   Fix: previous script ran before modal existed -> no popup.
+============================== */
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Ensure modal markup exists (create if missing)
+  let backdrop = document.getElementById('modalBackdrop');
+  let modal = document.getElementById('playerModal');
+
+  if(!backdrop){
+    backdrop = document.createElement('div');
+    backdrop.className = 'modal-backdrop';
+    backdrop.id = 'modalBackdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  if(!modal){
+    modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.id = 'playerModal';
+    modal.setAttribute('role','dialog');
+    modal.setAttribute('aria-modal','true');
+    modal.setAttribute('aria-label','Fiche joueur');
+    modal.innerHTML = `
+      <div class="modal-header">
+        <div class="modal-title">
+          <h3 id="modalName">Joueur</h3>
+          <p id="modalPos">Position</p>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="panel" style="background:rgba(255,255,255,.02); border-color:rgba(255,255,255,.08)">
+          <h4 style="margin:0; font-family:'Bebas Neue',cursive; letter-spacing:3px; font-size:22px">Informations</h4>
+          <div class="kv">
+            <div><div class="k">Âge</div><div class="v" id="modalAge">—</div></div>
+            <div><div class="k">Nationalité</div><div class="v" id="modalNation">—</div></div>
+            <div><div class="k">Taille</div><div class="v" id="modalHeight">—</div></div>
+            <div><div class="k">Poids</div><div class="v" id="modalWeight">—</div></div>
+            <div style="grid-column:1/-1"><div class="k">Position</div><div class="v" id="modalPosition">—</div></div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  // Elements
+  const closeBtn = document.getElementById('modalClose');
+  const $name = document.getElementById('modalName');
+  const $posText = document.getElementById('modalPos');
+  const $age = document.getElementById('modalAge');
+  const $height = document.getElementById('modalHeight');
+  const $weight = document.getElementById('modalWeight');
+  const $nation = document.getElementById('modalNation');
+  const $position = document.getElementById('modalPosition');
+
+  const openModal = () => {
+    backdrop.classList.add('open');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeModal = () => {
+    backdrop.classList.remove('open');
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+  window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
+
+  const txt = (el)=> (el && el.textContent ? el.textContent.trim() : '');
+
+  // Bind all player/staff cards
+  document.querySelectorAll(".player-card:not([data-kind=\"staff\"])").forEach(card=>{
+    card.setAttribute('tabindex','0');
+
+    const openFor = ()=>{
+      const name = card.getAttribute('data-name') || txt(card.querySelector('.player-name')) || 'Membre';
+      const pos  = card.getAttribute('data-position') || card.getAttribute('data-role') || txt(card.querySelector('.player-position')) || txt(card.querySelector('.player-role')) || '—';
+
+      if($name) $name.textContent = name;
+      if($posText) $posText.textContent = pos;
+
+      if($age) $age.textContent = card.getAttribute('data-age') || '—';
+      if($height) $height.textContent = card.getAttribute('data-height') || '—';
+      if($weight) $weight.textContent = card.getAttribute('data-weight') || '—';
+      if($nation) $nation.textContent = card.getAttribute('data-nation') || '—';
+      if($position) $position.textContent = pos;
+
+      openModal();
+    };
+
+    card.addEventListener('click', openFor);
+    card.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter' || e.key===' '){ e.preventDefault(); openFor(); }
+    });
+  });
+});
+</script>
+
+
+<script>
+/* ==============================
+   POPUP POPOVER JS (WORKING OVERRIDE)
+   - Players ONLY (no staff)
+   - Always visible (clamped in viewport)
+============================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("playerModal");
+  const backdrop = document.getElementById("modalBackdrop");
+  const closeBtn = document.getElementById("modalClose");
+
+  const $name = document.getElementById("modalName");
+  const $posText = document.getElementById("modalPos");
+  const $age = document.getElementById("modalAge");
+  const $height = document.getElementById("modalHeight");
+  const $weight = document.getElementById("modalWeight");
+  const $nation = document.getElementById("modalNation");
+  const $position = document.getElementById("modalPosition");
+
+  if(!modal || !backdrop) return;
+
+  function closeModal(){
+    backdrop.classList.remove("open");
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  function openModalFor(card){
+    // Fill fields (ONLY requested ones)
+    const name = card.getAttribute("data-name") || (card.querySelector(".player-name")?.textContent || "Joueur").trim();
+    const pos  = card.getAttribute("data-position") || (card.querySelector(".player-position")?.textContent || "Position").trim();
+
+    if($name) $name.textContent = name;
+    if($posText) $posText.textContent = pos;
+
+    if($age) $age.textContent = card.getAttribute("data-age") || "—";
+    if($height) $height.textContent = card.getAttribute("data-height") || "—";
+    if($weight) $weight.textContent = card.getAttribute("data-weight") || "—";
+    if($nation) $nation.textContent = card.getAttribute("data-nation") || "—";
+    if($position) $position.textContent = pos;
+
+    // Open first so offsetWidth/Height are available
+    backdrop.classList.add("open");
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+
+    // Position as a popover near clicked card (viewport coords)
+    const rect = card.getBoundingClientRect();
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    // Ensure modal is measured
+    const mw = modal.offsetWidth || 360;
+    const mh = modal.offsetHeight || 260;
+
+    // Prefer to the right, vertically centered on card
+    let left = rect.right + 14;
+    let top  = rect.top + (rect.height/2) - (mh/2);
+
+    // If no space on right, go left
+    if(left + mw > vw - 10){
+      left = rect.left - mw - 14;
+    }
+
+    // Clamp inside viewport
+    left = Math.max(10, Math.min(left, vw - mw - 10));
+    top  = Math.max(10, Math.min(top, vh - mh - 10));
+
+    modal.style.position = "fixed";
+    modal.style.left = left + "px";
+    modal.style.top  = top + "px";
+    modal.style.transform = "none";
+  }
+
+  // Close interactions
+  if(closeBtn) closeBtn.addEventListener("click", closeModal);
+  backdrop.addEventListener("click", closeModal);
+  window.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeModal(); });
+
+  // Bind ONLY players (exclude staff)
+  const selector = ".player-card:not([data-kind=\"staff\"])";
+  document.querySelectorAll(selector).forEach(card => {
+    // Make accessible
+    card.setAttribute("tabindex","0");
+    card.style.cursor = "pointer";
+
+    // Capture-phase listener to override older scripts
+    card.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation?.();
+      openModalFor(card);
+    }, true);
+
+    card.addEventListener("keydown", (e)=>{
+      if(e.key === "Enter" || e.key === " "){
+        e.preventDefault();
+        openModalFor(card);
+      }
+    });
+  });
+});
 </script>
 
 </body>
