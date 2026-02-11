@@ -1482,7 +1482,7 @@ img, svg { max-width:100%; height:auto; }
             <div class="roster-grid">
 <div class="player-card" data-position="goalies"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Goalie">
-        <div class="player-image"><fowler class="png"></fowler><div class="player-number">#—</div></div>
+        <div class="player-image"><fowler.png class="png"></fowler><div class="player-number">#—</div></div>
         <div class="player-info">
             <h3 class="player-name">Jacob Fowler</h3>
             <p class="player-position">Goalie</p>
