@@ -411,9 +411,7 @@
         }
 
         .player-image {
-            width: 100%;
-            object-fit : contain;
-            height: 300px;
+            height: 220px;
             background: linear-gradient(180deg, rgba(211, 47, 47, 0.2), var(--shark-black));
             display: flex;
             align-items: center;
@@ -1427,6 +1425,11 @@ img, svg { max-width:100%; height:auto; }
 .modal.open{
   transform:none !important; /* we position manually */
 }
+.player-photo {
+    width: 300px;   /* taille de l'image */
+    height: auto;
+}
+
 
 </style>
 </head>
