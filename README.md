@@ -1441,7 +1441,7 @@ img, svg { max-width:100%; height:auto; }
 <body>
     <!-- Loading -->
     <div class="loading" id="loading">
-        <img class="loading-logo" img src="https://cdn.discordapp.com/emojis/1472590941435990037.webp?size=96" class="logo">
+        <img class="loading-logo"><img src="https://cdn.discordapp.com/emojis/1472590941435990037.webp?size=96" class="logo">
         <div class="loading-text">HAGUENAU SHARKS</div>
     </div>
 
@@ -1449,7 +1449,7 @@ img, svg { max-width:100%; height:auto; }
     <header class="header" id="header">
         <div class="container">
             <a href="#" class="logo">
-                <img class="logo-img" img src="https://cdn.discordapp.com/emojis/1472590941435990037.webp?size=96" class="logo">
+                <img class="logo-img"><img src="https://cdn.discordapp.com/emojis/1472590941435990037.webp?size=96" class="logo">
             </a>
             <nav class="nav">
                 <a href="#home" class="nav-link">Home</a>
@@ -3631,4 +3631,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
