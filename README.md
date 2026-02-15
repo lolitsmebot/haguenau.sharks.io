@@ -1744,7 +1744,7 @@ img, svg { max-width:100%; height:auto; }
             <div class="staff-grid">
               <div class="player-card" data-staff="true" data-position="staff"
                    data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Entraîneur" data-kind="staff">
-                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472646366193909851.webp?size=96" class="player-photo"><div class="player-number">COACH</div></div>
+                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472646366193909851.webp?size=4096" class="player-photo"><div class="player-number"></div></div>
                 <div class="player-info">
                   <h3 class="player-name">Michal Duras</h3>
                   <p class="player-position">Head Coach</p>
@@ -1753,7 +1753,7 @@ img, svg { max-width:100%; height:auto; }
 
               <div class="player-card" data-staff="true" data-position="staff"
                    data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Entraîneur adjoint" data-kind="staff">
-                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472647631355248774.webp?size=96" class="player-photo"><div class="player-number">ASST</div></div>
+                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472647631355248774.webp?size=4096" class="player-photo"><div class="player-number"></div></div>
                 <div class="player-info">
                   <h3 class="player-name">Gabriel Da Costa</h3>
                   <p class="player-position">Assistant Coach</p>
@@ -1762,7 +1762,7 @@ img, svg { max-width:100%; height:auto; }
 
               <div class="player-card" data-staff="true" data-position="staff"
                    data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Président" data-kind="staff">
-                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472644614904086598.webp?size=96" class="player-photo"><div class="player-number">PRES</div></div>
+                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472644614904086598.webp?size=4096" class="player-photo"><div class="player-number"></div></div>
                 <div class="player-info">
                   <h3 class="player-name">Florent Walter</h3>
                   <p class="player-position">President</p>
@@ -1771,7 +1771,7 @@ img, svg { max-width:100%; height:auto; }
 
               <div class="player-card" data-staff="true" data-position="staff"
                    data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Directeur sportif" data-kind="staff">
-                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472644643551183041.webp?size=96" class="player-photo"><div class="player-number">GM</div></div>
+                <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472644643551183041.webp?size=4096" class="player-photo"><div class="player-number"></div></div>
                 <div class="player-info">
                   <h3 class="player-name">Lucas Walter</h3>
                   <p class="player-position">Sporting Director</p>
