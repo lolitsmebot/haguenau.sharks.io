@@ -1507,7 +1507,7 @@ img, svg { max-width:100%; height:auto; }
             <div class="roster-grid">
 <div class="player-card" data-position="goalies"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Goalie">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1471586881337823407.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1471586881337823407.webp?size=4096" class="player-photo"><div class="player-number">#1</div></div>
         <div class="player-info">
             <h3 class="player-name">Jacob Fowler</h3>
             <p class="player-position">Goalie</p>
@@ -1518,7 +1518,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="goalies"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Goalie">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472590657653837988.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472590657653837988.webp?size=4096" class="player-photo"><div class="player-number">#30</div></div>
         <div class="player-info">
             <h3 class="player-name">Antoine Bibeau</h3>
             <p class="player-position">Goalie</p>
@@ -1529,7 +1529,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="goalies"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Goalie">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594954932060408.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594954932060408.webp?size=4096" class="player-photo"><div class="player-number">#5</div></div>
         <div class="player-info">
             <h3 class="player-name">Antoine Keller</h3>
             <p class="player-position">Goalie</p>
@@ -1540,7 +1540,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594693312483359.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594693312483359.webp?size=4096" class="player-photo"><div class="player-number">#4</div></div>
         <div class="player-info">
             <h3 class="player-name">Jacob Larsson</h3>
             <p class="player-position">Defense</p>
@@ -1551,7 +1551,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594655290855484.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594655290855484.webp?size=4096" class="player-photo"><div class="player-number">#3</div></div>
         <div class="player-info">
             <h3 class="player-name">Jack St. Ivany</h3>
             <p class="player-position">Defense</p>
@@ -1562,7 +1562,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594616279765003.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594616279765003.webp?size=4096" class="player-photo"><div class="player-number">#76</div></div>
         <div class="player-info">
             <h3 class="player-name">William Villeneuve</h3>
             <p class="player-position">Defense</p>
@@ -1573,7 +1573,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594914255700181.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594914255700181.webp?size=4096" class="player-photo"><div class="player-number">#6</div></div>
         <div class="player-info">
             <h3 class="player-name">Jules Boscq</h3>
             <p class="player-position">Defense</p>
@@ -1584,7 +1584,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594578027843747.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594578027843747.webp?size=4096" class="player-photo"><div class="player-number">#7</div></div>
         <div class="player-info">
             <h3 class="player-name">Pierre Crinon</h3>
             <p class="player-position">Defense</p>
@@ -1595,7 +1595,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="defense"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Defense">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472597567761289408.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472597567761289408.webp?size=4096" class="player-photo"><div class="player-number">#52</div></div>
         <div class="player-info">
             <h3 class="player-name">Yohann Auvitu</h3>
             <p class="player-position">Defense</p>
@@ -1606,7 +1606,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594825638576198.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594825638576198.webp?size=4096" class="player-photo"><div class="player-number">#85</div></div>
         <div class="player-info">
             <h3 class="player-name">Alexandre Texier</h3>
             <p class="player-position">Forward</p>
@@ -1628,7 +1628,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594532234428559.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594532234428559.webp?size=4096" class="player-photo"><div class="player-number">#9</div></div>
         <div class="player-info">
             <h3 class="player-name">Ty Ronning</h3>
             <p class="player-position">Forward</p>
@@ -1639,7 +1639,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594497828556831.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594497828556831.webp?size=4096" class="player-photo"><div class="player-number">#2</div></div>
         <div class="player-info">
             <h3 class="player-name">Daniel Carr</h3>
             <p class="player-position">Forward</p>
@@ -1650,7 +1650,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472590816878006352.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472590816878006352.webp?size=4096" class="player-photo"><div class="player-number">#41</div></div>
         <div class="player-info">
             <h3 class="player-name">Pierre-Édouard Bellemare</h3>
             <p class="player-position">Forward</p>
@@ -1661,7 +1661,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595120036515943.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595120036515943.webp?size=4096" class="player-photo"><div class="player-number">#10</div></div>
         <div class="player-info">
             <h3 class="player-name">Evan Barratt</h3>
             <p class="player-position">Forward</p>
@@ -1672,7 +1672,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594469147639819.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594469147639819.webp?size=4096" class="player-photo"><div class="player-number">#82</div></div>
         <div class="player-info">
             <h3 class="player-name">Alexandre Grenier</h3>
             <p class="player-position">Forward</p>
@@ -1683,7 +1683,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595029628293373.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595029628293373.webp?size=4096" class="player-photo"><div class="player-number">#61</div></div>
         <div class="player-info">
             <h3 class="player-name">Philippe Maillet</h3>
             <p class="player-position">Forward</p>
@@ -1694,7 +1694,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595086746452078.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472595086746452078.webp?size=4096" class="player-photo"><div class="player-number">#77</div></div>
         <div class="player-info">
             <h3 class="player-name">Sacha Treille</h3>
             <p class="player-position">Forward</p>
@@ -1705,7 +1705,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594322154197092.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594322154197092.webp?size=4096" class="player-photo"><div class="player-number">#94</div></div>
         <div class="player-info">
             <h3 class="player-name">Tim Bozon</h3>
             <p class="player-position">Forward</p>
@@ -1716,7 +1716,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594296728326347.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594296728326347.webp?size=4096" class="player-photo"><div class="player-number">#29</div></div>
         <div class="player-info">
             <h3 class="player-name">Louis Boudon</h3>
             <p class="player-position">Forward</p>
@@ -1727,7 +1727,7 @@ img, svg { max-width:100%; height:auto; }
     </div>
 <div class="player-card" data-position="forwards"
          data-age="—" data-height="—" data-weight="—" data-nation="—" data-role="Forward">
-        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594866780246251.webp?size=4096" class="player-photo"><div class="player-number">#—</div></div>
+        <div class="player-image"><img src="https://cdn.discordapp.com/emojis/1472594866780246251.webp?size=4096" class="player-photo"><div class="player-number">#20</div></div>
         <div class="player-info">
             <h3 class="player-name">Justin Addamo</h3>
             <p class="player-position">Forward</p>
