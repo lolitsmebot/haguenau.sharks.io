@@ -4126,7 +4126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="history-mediaHint">Remplace par ton image : <code>lien Discord (cdn.discordapp.com/...)</code></div>
           </div>
           <div class="history-mediaBox">
-            <img class="history-img" src="https://cdn.discordapp.com/emojis/1473777801034207365.webp?size=4096" alt="Haguenau Sharks 1876 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+            <img class="history-img" src="https://cdn.discordapp.com/attachments/1145118861587382323/1473783168103350363/D6BC3E5D-79D9-4BAF-90C9-5B60570A2A63.jpg?ex=69977708&is=69962588&hm=1e65c1a7293db242982dfe7e77b5fe3157ec0892c766b871d52ca311fb24cc6a&" alt="Haguenau Sharks 1876 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
             <div class="history-empty">
               <div class="history-emptyIcon"></div>
               <div class="history-emptyText"></div>
