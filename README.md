@@ -2844,43 +2844,43 @@ img, svg { max-width:100%; height:auto; }
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Maillot extérieur 2025/2026"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473084037248716862.webp?size=1024" alt="Maillot extérieur 2025/2026"></div>
         <h3 class="shop-title">Maillot extérieur 2025/2026</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="T-shirt"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473083956164296734.webp?size=1024" alt="T-shirt"></div>
         <h3 class="shop-title">T-shirt</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Pull / Hoodie"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473083923302056028.webp?size=1024" alt="Pull / Hoodie"></div>
         <h3 class="shop-title">Pull / Hoodie</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Casquette"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473083901718171711.webp?size=1024" alt="Casquette"></div>
         <h3 class="shop-title">Casquette</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Bonnet"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473083697950625946.webp?size=1024" alt="Bonnet"></div>
         <h3 class="shop-title">Bonnet</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Écharpe"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473084309127696579.webp?size=1024" alt="Écharpe"></div>
         <h3 class="shop-title">Écharpe</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
 
       <article class="shop-card">
-        <div class="shop-media"><img src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Palet"></div>
+        <div class="shop-media"><img src="https://cdn.discordapp.com/emojis/1473083739935477840.webp?size=1024" alt="Palet"></div>
         <h3 class="shop-title">Palet</h3>
         <p class="shop-meta"><code>lien Discord (cdn.discordapp.com/...)</code></p>
       </article>
@@ -4126,7 +4126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="history-mediaHint">Remplace par ton image : <code>lien Discord (cdn.discordapp.com/...)</code></div>
           </div>
           <div class="history-mediaBox">
-            <img class="history-img" src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_YOUR_IMAGE.png?size=1024" alt="Haguenau Sharks 1876 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+            <img class="history-img" src="https://cdn.discordapp.com/emojis/1473777801034207365.webp?size=1024" alt="Haguenau Sharks 1876 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
             <div class="history-empty">
               <div class="history-emptyIcon">🖼️</div>
               <div class="history-emptyText">Colle ton lien Discord dans le src</div>
