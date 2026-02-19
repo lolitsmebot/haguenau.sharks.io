@@ -4314,7 +4314,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="history-mediaHint"></div>
             </div>
             <div class="history-mediaBox">
-              <img class="history-img" src="https://cdn.discordapp.com/attachments/1145118861587382323/1474149811996594186/640D2D57-4BFC-41C7-8A0A-A2B737F06305.png?ex=6998cc7f&is=69977aff&hm=7ece610d7d70b6da55749b8d1d9ab44e27bb1dd372ebce1a932ddc75b35786f0&" alt="1997 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+              <img class="history-img" src="https://cdn.discordapp.com/attachments/1145118861587382323/1474150881292325038/B783D0B6-B580-4D8F-AAC8-3736B6C24783.png?ex=6998cd7e&is=69977bfe&hm=196f2037a0ec5f2b3951e1ff6b2e5c5fb7c5a8ec0f1b53e70998c425ea971061&" alt="1997 (à remplacer)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
               <div class="history-empty">
                 <div class="history-emptyIcon"></div>
                 <div class="history-emptyText"></div>
