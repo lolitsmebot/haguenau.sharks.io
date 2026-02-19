@@ -1769,6 +1769,104 @@ img, svg { max-width:100%; height:auto; }
   .future-grid{ grid-template-columns: 1fr; }
 }
 
+
+/* ==============================
+   SHOP IMAGE FRAMES (BIGGER)
+   - bigger image boxes for Discord images
+============================== */
+.shop-grid{ gap:18px !important; }
+.shop-card{ padding:18px !important; }
+.shop-media{ height:260px !important; border-radius:16px !important; }
+.shop-media img{ object-fit:contain; image-rendering:auto; }
+@media (max-width: 980px){
+  .shop-media{ height:240px !important; }
+}
+@media (max-width: 520px){
+  .shop-card{ padding:16px !important; }
+  .shop-media{ height:220px !important; }
+}
+
+
+/* ==============================
+   HOME ARENA PHOTO (Discord)
+============================== */
+.home-arena{
+  width: min(1100px, 100%);
+  margin: 30px auto 0;
+  border: 2px solid rgba(211,47,47,.30);
+  background: rgba(255,255,255,.03);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(0,0,0,.55);
+}
+.home-arena-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding: 12px 14px;
+  background: rgba(0,0,0,.35);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.home-arena-tag{
+  font-family:'Bebas Neue', cursive;
+  letter-spacing:2px;
+  font-size: 18px;
+  color: var(--shark-white);
+}
+.home-arena-hint{
+  opacity:.8;
+  font-size: 12px;
+}
+.home-arena-frame{
+  height: 420px;
+  position: relative;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(211,47,47,.22), transparent 55%),
+    radial-gradient(circle at 80% 60%, rgba(0,188,212,.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.35));
+}
+.home-arena-frame.empty:before{
+  content:"";
+  position:absolute; inset:0;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.05), rgba(255,255,255,.05) 14px, rgba(255,255,255,.02) 14px, rgba(255,255,255,.02) 28px);
+  opacity:.55;
+}
+.home-arena-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.home-arena-empty{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-align:center;
+  padding: 18px;
+  opacity:.85;
+}
+.home-arena-emptyIcon{ font-size: 34px; }
+.home-arena-emptyText{
+  font-weight:900;
+  letter-spacing:.6px;
+}
+.home-arena-emptySub{ opacity:.85; font-size: 12px; }
+
+@media (max-width: 768px){
+  .home-arena-frame{ height: 320px; }
+}
+@media (max-width: 520px){
+  .home-arena{ margin-top: 18px; }
+  .home-arena-top{ padding: 10px 12px; }
+  .home-arena-tag{ font-size: 16px; }
+  .home-arena-frame{ height: 240px; }
+}
+
 </style>
 </head>
 <body>
@@ -1810,7 +1908,24 @@ img, svg { max-width:100%; height:auto; }
                     <span class="hero-stat-value">3th</span>
                     <span class="hero-stat-label">Pacific</span>
                 </div>
-                <div class="hero-stat">
+                
+
+<div class="home-arena">
+  <div class="home-arena-top">
+    <div class="home-arena-tag">🏟️ PATINOIRE • PHOTO</div>
+    <div class="home-arena-hint">Colle ton lien Discord dans <code>src</code></div>
+  </div>
+  <div class="home-arena-frame">
+    <img class="home-arena-img" src="https://cdn.discordapp.com/attachments/000000000000000000/000000000000000000/PASTE_RINK_PHOTO.png?size=2048" alt="Photo patinoire (Discord)" onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+    <div class="home-arena-empty">
+      <div class="home-arena-emptyIcon">🖼️</div>
+      <div class="home-arena-emptyText">Colle ton lien Discord de patinoire</div>
+      <div class="home-arena-emptySub">Ex: <code>https://cdn.discordapp.com/attachments/...</code></div>
+    </div>
+  </div>
+</div>
+
+<div class="hero-stat">
                     <span class="hero-stat-value">12-7-0</span>
                     <span class="hero-stat-label">Record</span>
                 </div>
@@ -1822,7 +1937,7 @@ img, svg { max-width:100%; height:auto; }
             
             <div style="margin-top: 40px;">
                 <a href="#roster" class="btn">VIEW ROSTER</a>
-                <a href="#" class="btn">SHOP</a>
+                <a href="#shop" class="btn">SHOP</a>
             </div>
         </div>
     </section>
